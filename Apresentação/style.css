@@ -1,0 +1,21 @@
+
+img{
+    display: flex;
+ 
+    background-color: aliceblue;
+    margin-left: 34%;
+    margin-top: 20px;
+    width: 500px;
+}
+
+.titulo{
+    display: flex;
+    justify-content: center;
+    background-color: beige;
+}
+
+.info{
+    background-color: beige;
+    align-items: center;
+    text-align: center;
+}
