@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML101.2</title>
+</head>
+<body>
+    <hgroup>
+        <h1>Olá</h1> <!--Agrupamento de TAGS-->
+        <p>Tudo bem?</p>
+    </hgroup>
+
+    <!-- TAG de citação-->
+    <blockquote cite="https://pt.wikipedia.org/">
+        <p>
+            Lorem ipsum dolor sit amet,<br/> <!--ENTER-->
+            consectetur adipiscing elit. Integer dapibus lectus <br/>
+            a tellus cursus consequat. Praesent cursus diam in lectus aliquet, <br/>
+            ut sagittis nisi molestie. Nunc volutpat orci at arcu aliquam porta vel ut nibh. <br/>
+            Praesent velit lacus, consequat a dapibus eget, bibendum et nulla. Maecenas congue finibus maximus. Etiam venenatis, odio in placerat porta, nisi felis sagittis est, sit amet interdum nisl lectus quis velit. Vestibulum neque risus, efficitur a venenatis id, mollis a libero. Quisque sapien erat, tincidunt in luctus vitae, ullamcorper a est.
+        </p>
+        <hr/>
+
+    </blockquote>
+    <p>
+        EU não vou pra ecola hoje <a href="http://www.educacao.sp.gov.br/cgrh/escolas/dom-barreto/" target="_blank"><cite> EE Dom Barreto</cite></a><br/>
+        André estava explicando o que é <abbr title="rede neural na IA">Rede neural</abbr><hr/><!--ABREVIAÇÂO-->
+        <address>
+            <p>Criado por <a href="#">Antônio</a></p><br/>
+        </address> <!-- São para "endereçar" algo, desde um endereço, até o dono da página-->
+        H<sub>2</sub>O<br/> <!-- sub =  fica em baixo no texto-->
+        X<sup>2</sup><br/> <!-- sup =  fica em cima no texto-->
+    
+    </p><hr/>
+    
+    <!--LISTA-->
+    <p>ordenada</p><br/>
+    <ul> <!-- Lista com bolinha-->
+        <li>Processador</li>
+        <li>Memoria Ram</li>
+        <li>SSD</li>
+        <li>Fonte</li>
+        <li>Placa Mãe</li>
+        <li>Gabinete</li>
+    </ul>
+
+    <ol> <!-- Lista numerada-->
+        <li>Processador</li>
+        <li>Memoria Ram</li>
+        <li>SSD</li>
+        <li>Fonte</li>
+        <li>Placa Mãe</li>
+        <li>Gabinete</li>
+    </ol>
+
+    <dl> <!--LISTA DESCRITIVA / GLOSSÁRIO / -->
+        <dt>Cypher</dt>
+        <dd>Personagem do jogo Valorante. Lorem ipsum dolor sit amet,<br/> <!--ENTER-->
+            consectetur adipiscing elit. Integer dapibus lectus <br/>
+            a tellus cursus consequat. Praesent cursus diam in lectus aliquet, <br/>
+            ut sagittis nisi molestie. Nunc volutpat orci at arcu aliquam port <br/>
+            Praesent velit lacus, consequat a dapibus eget, bibendum et nulla. Maecenas <br/>
+            congue finibus maximus. Etiam venenatis, odio in placerat porta, nisi <br/>
+        </dd>
+        <dt>Cypher</dt>
+        <dd>Personagem do jogo Valorante. Lorem ipsum dolor sit amet,<br/> <!--ENTER-->
+            consectetur adipiscing elit. Integer dapibus lectus <br/>
+            a tellus cursus consequat. Praesent cursus diam in lectus aliquet, <br/>
+            ut sagittis nisi molestie. Nunc volutpat orci at arcu aliquam port <br/>
+            Praesent velit lacus, consequat a dapibus eget, bibendum et nulla. Maecenas <br/>
+            congue finibus maximus. Etiam venenatis, odio in placerat porta, nisi <br/></dd>
+        <dt>Cypher</dt>
+        <dd>Personagem do jogo Valorante. Lorem ipsum dolor sit amet,<br/> <!--ENTER-->
+            consectetur adipiscing elit. Integer dapibus lectus <br/>
+            a tellus cursus consequat. Praesent cursus diam in lectus aliquet, <br/>
+            ut sagittis nisi molestie. Nunc volutpat orci at arcu aliquam port <br/>
+            Praesent velit lacus, consequat a dapibus eget, bibendum et nulla. Maecenas <br/>
+            congue finibus maximus. Etiam venenatis, odio in placerat porta, nisi <br/></dd>
+        <dt>Cypher</dt>
+        <dd>Personagem do jogo Valorante. Lorem ipsum dolor sit amet, &lt;3<br/> <!--ENTER-->
+            consectetur adipiscing elit. Integer dapibus lectus <br/>
+            a tellus cursus consequat. Praesent cursus diam in lectus aliquet, <br/>
+            ut sagittis nisi molestie. Nunc volutpat orci at arcu aliquam port <br/>
+            Praesent velit lacus, consequat a dapibus eget, bibendum et nulla. Maecenas <br/>
+            congue finibus maximus. Etiam venenatis, odio in placerat porta, nisi <br/></dd>
+    </dl><hr/>
+
+    <!--TABELAS-->
+    <table>
+        <tr>
+            <th>nome</th> <!--Titulos-->
+            <th>cor</th>
+            <th>CEP</th>
+            <th>MSE</th>
+            <th>Objeto</th>
+        </tr>
+        <tr>
+            <td colspan="2">um Nome</td> <!-- colunas mecladas-->
+            <td>uma cor</td>
+            <td>um lugar no mundo</td>
+            <td>Minha sogra é:</td>
+            <td>um objeto aleatório</td>
+        </tr>
+        <tr>
+            <td>Antônio</td> <!-- Colunas-->
+            <td rowspan="2">Azul</td> <!--linhas mescladas-->
+            <td>Madrid</td>
+            <td>GEnte FINA</td>
+            <td>Monitor</td>
+        </tr>
+        <tr>
+            <td>André</td>
+            <td>Azul</td>
+            <td>Stutgard</td>
+            <td>Legal</td>
+            <td>Carregador</td>
+        </tr>
+    </table><hr/>
+
+    <pre>
+    <code> <!-- TAG semantica de codigo-->
+        a = 13;
+        b = 12;
+        if a == b {
+            print(aloalo)
+        }
+    </code>
+    </pre><!--deixa os espaços em braco acontecerem-->
+
+
+</body>
+</html>
