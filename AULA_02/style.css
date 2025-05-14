@@ -1,0 +1,30 @@
+*{
+    margin: 0px 1px 3px 0px;  
+    border: 0;  
+    padding: 0; 
+}
+
+h1{
+    text-align: center;
+    background-color: aliceblue;
+    color: darkblue;
+     font-family: Arial, Helvetica, sans-serif;
+    font-size: 7em;
+
+
+}
+
+a[href="https://www.netshoes.com.br/"]{
+    color: darkcyan;
+}
+
+main:first-child{
+    background-color: aliceblue;
+}
+
+.menu:hover{
+    color: darkblue;
+    background-color: aliceblue;
+    cursor: pointer;
+
+}
