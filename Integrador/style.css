@@ -1365,6 +1365,7 @@ header {
   flex-direction: column; 
   gap: 10px;
   color: #D9E4FF;
+  text-decoration: none;
 }
 
 .itemMenu {
@@ -1373,7 +1374,11 @@ header {
   cursor: pointer;
   background-color: #1f3a5f;
   transition: background-color 0.3s ease;
+}
+
+.itemMenu a{
   text-decoration: none;
+  color: #D9E4FF;
 }
 
 .itemMenu:hover,
@@ -1556,7 +1561,7 @@ header {
   display: inline-block;
   transition: background-color 0.3s;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
-  margin-top: 550px;
+  margin-top: 600px;
   margin-left: -500px;
 }
 

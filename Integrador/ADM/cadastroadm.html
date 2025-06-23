@@ -11,17 +11,17 @@
     </head>
     <body class="paginaLogin">
         <!--Menu Lateral-->
-    <aside class="menuLateral">
-        <nav class="navegacaoMenu">
-            <h2 class="tituloMenu">Menu</h2>
-            <ul class="listaMenu">
-                <li class="itemMenu"><a href="dashboard.html">Dashboard</li></a>
-                <li class="itemMenu Ativo"><a href="cadastroadm.html">Cadastro</li></a>
-                <li class="itemMenu"><a href="atendimento.html">Atendimento</li></a>
-                <li class="itemMenu"><a href="crud.html">Produtos</li></a>
-            </ul>
-        </nav>
-    </aside>
+        <aside class="menuLateral">
+            <nav class="navegacaoMenu">
+                <h2 class="tituloMenu">Menu</h2>
+                <ul class="listaMenu">
+                    <li class="itemMenu"><a href="dashboard.html">Dashboard</li></a>
+                    <li class="itemMenu Ativo"><a href="cadastroadm.html">Cadastro</li></a>
+                    <li class="itemMenu"><a href="atendimento.html">Atendimento</li></a>
+                    <li class="itemMenu"><a href="crud.html">Produtos</li></a>
+                </ul>
+            </nav>
+        </aside>
  
         <!--Card cadastro-->
         <main class="cadastroAdm">
@@ -31,26 +31,31 @@
                 <form class="formularioCadastro">
                     <section class="grupoCampos">
                         <section class="colunaEsquerda">
-                        <label class="labelCampo">Nome</label>
-                        <input type="text" class="campoInput" placeholder="Nome completo"  />
+                            <label class="labelCampo" for="nome">Nome</label>
+                            <input type="text" class="campoInput" id="nome" name="nome" placeholder="Nome completo" />
 
-                        <label class="labelCampo">Email</label>
-                        <input type="email" class="campoInput" placeholder="Email" />
+                            <label class="labelCampo" for="email">Email</label>
+                            <input type="email" class="campoInput" id="email" name="email" placeholder="Email" />
 
-                        <label class="labelCampo">Contato</label>
-                        <input type="tel" class="campoInput" placeholder="(xx)xxxxx-xxxx" />
+                            <label class="labelCampo" for="contato">Contato</label>
+                            <input type="tel" class="campoInput" id="contato" name="contato" placeholder="(xx)xxxxx-xxxx" />
 
-                        <label class="labelCampo">CPF</label>
-                        <input type="text" class="campoInput" placeholder="CPF" />
+                            <label class="labelCampo" for="cpf">CPF</label>
+                            <input type="text" class="campoInput" id="cpf" name="cpf" placeholder="CPF" />
 
-                        <label class="labelCampo">Senha</label>
-                        <input type="password" class="campoInput" placeholder="Senha" />
+                            <label class="labelCampo" for="senha">Senha</label>
+                            <input type="password" class="campoInput" id="senha" name="senha" placeholder="Senha" />
 
-                        <label class="labelCampo">Confirmar Senha</label>
-                        <input type="password" class="campoInput" placeholder="Confirme sua senha" />
-                    </section>
-                    <section class="areaBotao">
-                        <a href="login.html" class="botaoCadastra">Cadastrar</a>
+                            <label class="labelCampo" for="confirmarSenha">Confirmar Senha</label>
+                            <input type="password" class="campoInput" id="confirmarSenha" name="confirmarSenha" placeholder="Confirme sua senha" />
+
+                            <label class="labelCampo">Confirmar Senha</label>
+                            <input type="password" class="campoInput" placeholder="Confirme sua senha" />
+                        </section>
+                        <!--Botão cadastrar-->
+                        <section class="areaBotao">
+                            <a href="loginAdm.html" class="botaoCadastra">Cadastrar</a>
+                        </section>
                     </section>
                 </form>
             </section>
