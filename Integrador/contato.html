@@ -10,94 +10,92 @@
         <link rel="stylesheet" href="style.css" />
     </head>
     <body>
-         <!-- Cabeçalho-->
         <header>
             <section class="containerTopo">
                 <figure class="logoMarca">
-                <a href="index.html"><img src="./Images/Aquari Tech.png" alt="Logo da Loja" /></a>
+                    <a href="index.html"><img src="./Images/Aquari Tech.png" alt="Logo da Loja" /></a>
                 </figure>
 
                 <form class="barraBusca">
-                <label class="visualmenteOculto">Buscar</label>
-                <input type="search" placeholder="Buscar..." />
-                <button>
-                    <i class="bi bi-search"></i>
-                </button>
+                    <label class="visualmenteOculto" for="campoBusca">Buscar</label>
+                    <input type="search" id="campoBusca" name="termoBusca" placeholder="Buscar..." />
+                    <button type="submit" aria-label="Botão de busca">
+                        <i class="bi bi-search"></i>
+                    </button>
                 </form>
 
                 <section class="iconesTopo">
-                <article class="iconeTopo">
-                    <a href="carrinho.html" class="linkLogin">
-                    <i class="bi bi-cart3"></i>
-                    <p>Carrinho</p>
-                    </a>
-                </article>
+                    <article class="iconeTopo">
+                        <a href="carrinho.html" class="linkLogin" aria-label="Ir para o carrinho de compras">
+                            <i class="bi bi-cart3"></i>
+                            <p>Carrinho</p>
+                        </a>
+                    </article>
 
-                <article class="iconeTopo">
-                    <a href="login.html" class="linkLogin">
-                    <img src="./Images/profile-user.png" alt="Ícone de usuário" class="iconeUsuario" />
-                    <p>Login/Cadastro</p>
-                    </a>
-                </article>
+                    <article class="iconeTopo">
+                        <a href="login.html" class="linkLogin" aria-label="Ir para a página de Login/Cadastro">
+                            <img src="./Images/profile-user.png" alt="Ícone de usuário" class="iconeUsuario" />
+                            <p>Login/Cadastro</p>
+                        </a>
+                    </article>
                 </section>
             </section>
 
-            <!-- Menu de navegação-->
             <nav class="menuNavegacao">
                 <hr class="linhaMenu" />
-                <ul class="listaMenu">
-                <li><a href="contato.html">Contato</a></li>
-                <li><a href="catalogo.html">Catálogo</a></li>
-                <li><a href="sobre.html">Sobre Nós</a></li>
+                <ul class="listaMenu2">
+                    <li><a href="contato.html">Contato</a></li>
+                    <li><a href="catalogo.html">Catálogo</a></li>
+                    <li><a href="sobre.html">Sobre Nós</a></li>
                 </ul>
             </nav>
-            <!-- Card para envio de duvida-->
-            <section class="geral">
-                <section class="contatoSecao">
-                    <h2 class="contatoTitulo">Nos Contate</h2>
-                    <hr class="contatoLinha" />
-                    <p class="contatoDescricao">
-                        Tem alguma dúvida em relação a nossos produtos, marcas e etc?
-                        Esse espaço é reservado para isso, nos envie sua dúvida e seu e-mail
-                        para que possamos responder assim que possível.
-                    </p>
+        </header>
 
-                    <form class="formularioContato">
-                        <label class="rotuloCampo">Seu Email:</label>
-                        <input class="campoInput" type="email" placeholder="exemplo@email.com" />
+        ---
 
-                        <label class="rotuloCampo" >Dúvida:</label>
-                        <input class="campoInput" type="text"placeholder="Digite sua dúvida aqui..." />
+        <main class="geral">
+            <section class="contatoSecao">
+                <h2 class="contatoTitulo">Nos Contate</h2>
+                <hr class="contatoLinha" />
+                <p class="contatoDescricao">
+                    Tem alguma dúvida em relação aos nossos produtos, marcas, etc.?
+                    Este espaço é reservado para isso. Envie-nos sua dúvida e seu e-mail
+                    para que possamos responder assim que possível.
+                </p>
 
-                        <button class="botaoEnviar" type="submit">
+                <form class="formularioContato">
+                    <label class="rotuloCampo" for="emailContato">Seu Email:</label>
+                    <input class="campoInput" type="email" id="emailContato" name="emailContato" placeholder="exemplo@email.com" />
+
+                    <label class="rotuloCampo" for="perguntaContato">Dúvida:</label>
+                    <input class="campoInput" type="text" id="perguntaContato" name="perguntaContato" placeholder="Digite sua dúvida aqui..."  />
+
+                    <button class="botaoEnviar" type="submit">
                         <i class="bi bi-send"></i> Enviar
-                        </button>
-
-                    </form>
-                </section>
-
-                <!--Duvidas Frequentes-->
-                <section class="faqSecao">
-                    <h2 class="faqTitulo">Dúvidas Frequentes</h2>
-                    <ul class="listaDuvidas">
-                        <li class="itemDuvida">
-                            <strong class="pergunta">Como acompanho meu pedido?</strong>
-                            <p class="resposta">Você pode acompanhar pelo painel do cliente ou entrando em contato com o suporte.</p>
-                        </li>
-                        <li class="itemDuvida">
-                            <strong class="pergunta">Quais formas de pagamento são aceitas?</strong>
-                            <p class="resposta">Aceitamos cartões de crédito, débito, Pix e boleto bancário.</p>
-                        </li>
-                        <li class="itemDuvida">
-                            <strong class="pergunta">Qual o prazo de entrega?</strong>
-                            <p class="resposta">Depende da sua região, mas geralmente de 3 a 7 dias úteis.</p>
-                        </li>
-                    </ul>
-                </section>
+                    </button>
+                </form>
             </section>
-            
 
-         <!--Footer-->
+            <section class="faqSecao">
+                <h2 class="faqTitulo">Dúvidas Frequentes</h2>
+                <ul class="listaDuvidas">
+                    <li class="itemDuvida">
+                        <strong class="pergunta">Como acompanho meu pedido?</strong>
+                        <p class="resposta">Você pode acompanhar pelo painel do cliente ou entrando em contato com o suporte.</p>
+                    </li>
+                    <li class="itemDuvida">
+                        <strong class="pergunta">Quais formas de pagamento são aceitas?</strong>
+                        <p class="resposta">Aceitamos cartões de crédito, débito, Pix e boleto bancário.</p>
+                    </li>
+                    <li class="itemDuvida">
+                        <strong class="pergunta">Qual o prazo de entrega?</strong>
+                        <p class="resposta">Depende da sua região, mas geralmente de 3 a 7 dias úteis.</p>
+                    </li>
+                </ul>
+            </section>
+        </main>
+
+        ---
 
         <hr class="linhaRodape" />
 
@@ -125,18 +123,18 @@
             <section class="secaoRodape">
                 <h2 class="tituloRodape">Formas de Pagamento</h2>
                 <section class="pagamentoRodape">
-                    <section class="itemPagamento">
+                    <article class="itemPagamento">
                         <i class="bi bi-credit-card"></i>
                         <p>Cartão</p>
-                    </section>
-                    <section class="itemPagamento">
+                    </article>
+                    <article class="itemPagamento">
                         <i class="bi bi-qr-code"></i>
                         <p>Pix</p>
-                    </section>
-                    <section class="itemPagamento">
+                    </article>
+                    <article class="itemPagamento">
                         <i class="bi bi-upc"></i>
                         <p>Boleto</p>
-                    </section>
+                    </article>
                 </section>
             </section>
 
@@ -150,7 +148,5 @@
                 <small>&copy; 2025 Aquari Tech. Todos os direitos reservados.</small>
             </section>
         </footer>
-
-
-
-        </header>
+    </body>
+</html>

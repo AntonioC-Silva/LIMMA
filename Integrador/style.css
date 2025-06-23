@@ -123,24 +123,27 @@ header {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-.listaMenu {
+.listaMenu2 {
   background-color: #112A46;
   display: flex;
   justify-content: center;
+  align-items:center ;
+  flex-direction: row;
   list-style: none;
   margin: 0;
   padding: 10px 0;
   gap: 300px;
 }
 
-.listaMenu li a {
+
+.listaMenu2 li a {
   color: #D9E4FF;
   text-decoration: none;
   font-size: 15px;
   transition: color 0.2s;
 }
 
-.listaMenu li a:hover {
+.listaMenu2 li a:hover {
   color: #B0C8F0;
 }
 
@@ -153,7 +156,7 @@ header {
 }
 
 .bannersPromocionais img {
-  width: 1350px;
+  width: 100%;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
@@ -1370,6 +1373,7 @@ header {
   cursor: pointer;
   background-color: #1f3a5f;
   transition: background-color 0.3s ease;
+  text-decoration: none;
 }
 
 .itemMenu:hover,

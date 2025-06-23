@@ -10,101 +10,96 @@
         <link rel="stylesheet" href="style.css" />
     </head>
     <body class="paginaLogin">
-        <!-- Seta Voltar -->
         <header class="headerVoltar">
-            <a href="produto.html" class="botaoVoltar" aria-label="Voltar para o produto">
+            <a href="login.html" class="botaoVoltar" aria-label="Voltar para o produto">
                 <i class="bi bi-arrow-left"></i>
             </a>
         </header>
-        <!--Card cadastro-->
         <main class="conteudoPrincipal">
             <section class="cartaoCadastro">
                 <h1 class="titulo-cadastro">Cadastro</h1>
-                <!-- Campos do Formulario de cadastro Pessoais-->
                 <form class="formularioCadastro">
                     <section class="grupoCampos">
                         <section class="colunaEsquerda">
-                        <label class="labelCampo">Nome</label>
-                        <input type="text" class="campoInput" placeholder="Nome completo"  />
+                            <label class="labelCampo" for="nome">Nome</label>
+                            <input type="text" class="campoInput" id="nome" name="nome" placeholder="Nome completo" />
 
-                        <label class="labelCampo">Email</label>
-                        <input type="email" class="campoInput" placeholder="Email" />
+                            <label class="labelCampo" for="email">Email</label>
+                            <input type="email" class="campoInput" id="email" name="email" placeholder="Email" />
 
-                        <label class="labelCampo">Contato</label>
-                        <input type="tel" class="campoInput" placeholder="(xx)xxxxx-xxxx" />
+                            <label class="labelCampo" for="contato">Contato</label>
+                            <input type="tel" class="campoInput" id="contato" name="contato" placeholder="(xx)xxxxx-xxxx" />
 
-                        <label class="labelCampo">CPF</label>
-                        <input type="text" class="campoInput" placeholder="CPF" />
+                            <label class="labelCampo" for="cpf">CPF</label>
+                            <input type="text" class="campoInput" id="cpf" name="cpf" placeholder="CPF" />
 
-                        <label class="labelCampo">Senha</label>
-                        <input type="password" class="campoInput" placeholder="Senha" />
+                            <label class="labelCampo" for="senha">Senha</label>
+                            <input type="password" class="campoInput" id="senha" name="senha" placeholder="Senha" />
 
-                        <label class="labelCampo">Confirmar Senha</label>
-                        <input type="password" class="campoInput" placeholder="Confirme sua senha" />
-                    </section>
-
-                    <!--Divisoria no card-->
-                    <div class="divisoriaVertical" aria-hidden="true"></div>
-
-                    <!-- Campos do Formulario de cadastro Endereço-->
-                    <section class="colunaDireita">
-                        <label class="labelCampo">CEP</label>
-                        <input type="text" class="campoInput" placeholder="CEP" />
-
-                        <section class="linhaCidadeUf">
-                            <section class="campoCidade">
-                                <label class="labelCampo">Cidade</label>
-                                <input type="text" class="campoInput" placeholder="Cidade" />
-                            </section>
-
-                            <section class="campoUf">
-                                <label class="labelCampo">UF</label>
-                                <select class="campoInput ufSelect" >
-                                    <option value="UF">UF</option>
-                                    <option value="AC">AC</option>
-                                    <option value="AL">AL</option>
-                                    <option value="AP">AP</option>
-                                    <option value="AM">AM</option>
-                                    <option value="BA">BA</option>
-                                    <option value="CE">CE</option>
-                                    <option value="DF">DF</option>
-                                    <option value="ES">ES</option>
-                                    <option value="GO">GO</option>
-                                    <option value="MA">MA</option>
-                                    <option value="MT">MT</option>
-                                    <option value="MS">MS</option>
-                                    <option value="MG">MG</option>
-                                    <option value="PA">PA</option>
-                                    <option value="PB">PB</option>
-                                    <option value="PR">PR</option>
-                                    <option value="PE">PE</option>
-                                    <option value="PI">PI</option>
-                                    <option value="RJ">RJ</option>
-                                    <option value="RN">RN</option>
-                                    <option value="RS">RS</option>
-                                    <option value="RO">RO</option>
-                                    <option value="RR">RR</option>
-                                    <option value="SC">SC</option>
-                                    <option value="SP">SP</option>
-                                    <option value="SE">SE</option>
-                                    <option value="TO">TO</option>
-                                </select>
-                            </section>
+                            <label class="labelCampo" for="confirmarSenha">Confirmar Senha</label>
+                            <input type="password" class="campoInput" id="confirmarSenha" name="confirmarSenha" placeholder="Confirme sua senha" />
                         </section>
 
-                        <label class="labelCampo">Bairro</label>
-                        <input type="text"  class="campoInput" placeholder="Bairro" />
+                        <div class="divisoriaVertical" aria-hidden="true"></div>
 
-                        <label class="labelCampo">Número</label>
-                        <input type="text"  class="campoInput" placeholder="Número" />
+                        <section class="colunaDireita">
+                            <label class="labelCampo" for="cep">CEP</label>
+                            <input type="text" class="campoInput" id="cep" name="cep" placeholder="CEP" />
 
-                        <label class="labelCampo">Complemento</label>
-                        <input type="text" class="campoInput" placeholder="Complemento" />
+                            <section class="linhaCidadeUf">
+                                <section class="campoCidade">
+                                    <label class="labelCampo" for="cidade">Cidade</label>
+                                    <input type="text" class="campoInput" id="cidade" name="cidade" placeholder="Cidade" />
+                                </section>
+
+                                <section class="campoUf">
+                                    <label class="labelCampo" for="uf">UF</label>
+                                    <select class="campoInput ufSelect" id="uf" name="uf">
+                                        <option value="">UF</option>
+                                        <option value="AC">AC</option>
+                                        <option value="AL">AL</option>
+                                        <option value="AP">AP</option>
+                                        <option value="AM">AM</option>
+                                        <option value="BA">BA</option>
+                                        <option value="CE">CE</option>
+                                        <option value="DF">DF</option>
+                                        <option value="ES">ES</option>
+                                        <option value="GO">GO</option>
+                                        <option value="MA">MA</option>
+                                        <option value="MT">MT</option>
+                                        <option value="MS">MS</option>
+                                        <option value="MG">MG</option>
+                                        <option value="PA">PA</option>
+                                        <option value="PB">PB</option>
+                                        <option value="PR">PR</option>
+                                        <option value="PE">PE</option>
+                                        <option value="PI">PI</option>
+                                        <option value="RJ">RJ</option>
+                                        <option value="RN">RN</option>
+                                        <option value="RS">RS</option>
+                                        <option value="RO">RO</option>
+                                        <option value="RR">RR</option>
+                                        <option value="SC">SC</option>
+                                        <option value="SP">SP</option>
+                                        <option value="SE">SE</option>
+                                        <option value="TO">TO</option>
+                                    </select>
+                                </section>
+                            </section>
+
+                            <label class="labelCampo" for="bairro">Bairro</label>
+                            <input type="text" class="campoInput" id="bairro" name="bairro" placeholder="Bairro" />
+
+                            <label class="labelCampo" for="numero">Número</label>
+                            <input type="text" class="campoInput" id="numero" name="numero" placeholder="Número" />
+
+                            <label class="labelCampo" for="complemento">Complemento</label>
+                            <input type="text" class="campoInput" id="complemento" name="complemento" placeholder="Complemento" />
                         </section>
                     </section>
 
                     <section class="areaBotao">
-                        <a href="login.html" class="botaoCadastrar">Cadastrar</a>
+                        <button type="submit" class="botaoCadastrar">Cadastrar</button>
                     </section>
                 </form>
             </section>
