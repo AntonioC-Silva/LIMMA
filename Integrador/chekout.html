@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Checkout</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+        <link rel="icon" type="image/x-icon" href="./Images/Tech (2).png" />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <header>
+            <!-- Botão Voltar e titulo da pagina-->
+            <article class="voltar">
+                <a href="carrinho.html">
+                    <i class="bi bi-arrow-left"></i>
+                </a>
+                <h1>Checkout</h1>
+            </article>
+        </header>
+        <!--Card produto-->
+        <section class="carrinhoContainer">
+            <ul class="listaProdutosCarrinho">
+                <li class="cardCarrinho">
+                    <button class="botaoRemoverProduto" aria-label="Remover produto" title="Remover produto">
+                        <i class="bi bi-trash3-fill"></i>
+                    </button>
+
+                    <figure class="imagemProdutoCarrinho">
+                        <img src="./Images/sky.png" alt="Gabinete Gamer Redragon Skyfire" />
+                    </figure>
+
+                    <section class="infoProdutoCarrinho">
+                        <h3 class="nomeProdutoCarrinho">Gabinete Gamer Redragon Skyfire</h3>
+                        <strong class="precoProdutoCarrinho">R$ 439,90</strong>
+                    </section>
+
+                    <section class="quantidadeProduto">
+                        <button class="botaoQuantidade" aria-label="Diminuir Quantidade" title="Diminuir Quantidade">-</button>
+                        <input type="number" min="1" value="1" class="inputQuantidade" />
+                        <button class="botaoQuantidade" aria-label="Aumentar Quantidade" title="Aumentar Quantidade">+</button>
+                    </section>
+                </li>
+
+                <li class="cardCarrinho">
+                    <button class="botaoRemoverProduto" aria-label="Remover produto" title="Remover produto">
+                        <i class="bi bi-trash3-fill"></i>
+                    </button>
+
+                    <figure class="imagemProdutoCarrinho">
+                        <img src="./Images/330.png" alt="Gabinete Gamer Thermaltake Ceres 330 TG ARGB Snow" />
+                    </figure>
+
+                    <section class="infoProdutoCarrinho">
+                        <h3 class="nomeProdutoCarrinho">Gabinete Gamer Thermaltake Ceres 330 TG ARGB Snow</h3>
+                        <strong class="precoProdutoCarrinho">R$ 1500,90</strong>
+                    </section>
+
+                    <section class="quantidadeProduto">
+                        <button class="botaoQuantidade" aria-label="Diminuir Quantidade" title="Diminuir Quantidade">-</button>
+                        <input type="number" min="1" value="1" class="inputQuantidade" />
+                        <button class="botaoQuantidade" aria-label="Aumentar Quantidade" title="Aumentar Quantidade">+</button>
+                    </section>
+                </li>
+            </ul>
+            <!--Card forma de pagamento-->
+            <section class="formaPagamento" aria-labelledby="tituloPagamento">
+                <h2 id="tituloPagamento">Forma de Pagamento</h2>
+
+                <label>
+                    <input type="radio"  checked />
+                    <section class="iconePagamento">
+                        <i class="bi bi-qr-code"></i>
+                    <p>Pix</p>
+                    </section>
+                </label>
+
+                <label>
+                    <input type="radio" />
+                    <section class="iconePagamento">
+                        <i class="bi bi-credit-card"></i>
+                    <p>Cartão</p>
+                    </section>
+                </label>
+
+                <label>
+                    <input type="radio"  />
+                    <section class="iconePagamento">
+                        <i class="bi bi-upc"></i>
+                    <p>Boleto</p>
+                    </section>
+                </label>
+            </section>
+        </section>
+        <!-- Card Entrega-->
+        <section class="areaResumo">
+            <section class="cartaoEntrega">
+                <h2 class="tituloEntrega">Entrega</h2>
+
+                <label class="enderecoOpcao">
+                <input type="radio" checked />
+                Rua Geraldo Balotelli 148 – Bloco 7, APT 78 – Campinas Residencial
+                </label>
+
+                <a href="" class="linkAlterar">Alterar endereço ou adicionar outro</a>
+            </section>
+
+            <!-- Card de resumo da compra-->
+            <aside class="resumoCompra">
+                <h2 class="tituloResumo">Total</h2>
+                <p class="valorTotal">R$ 1.940,80</p>
+                <a href="#mensagemCompra" class="botaoComprar" aria-label="Finalizar compra" title="Finalizar compra">
+                Comprar
+                </a>
+                <article id="fundoBorrado"></article>
+
+                <section id="mensagemCompra" class="mensagemCompra">
+                    <p>Compra realizada com sucesso!</p>
+                    <a href="homeLogado.html" class="botaoComprar" aria-label="Fechar" title="Fechar">Fechar</a>
+                </section>
+            </aside>
+        </section>
+        
+        <!--Footer-->
+        <hr class="linhaRodape" />
+
+        <footer class="rodape">
+            <section class="secaoRodape">
+                <h2 class="tituloRodape">Links Úteis</h2>
+                <nav class="navegacaoRodape">
+                    <ul>
+                        <li class="itemRodape"><a href="catalogo.html">Catálogo</a></li>
+                        <li class="itemRodape"><a href="contato.html">Contato</a></li>
+                        <li class="itemRodape"><a href="sobre.html">Sobre Nós</a></li>
+                        <li class="itemRodape"><a href="index.html">Home</a></li>
+                    </ul>
+                </nav>
+            </section>
+
+            <section class="secaoRodape">
+                <h2 class="tituloRodape">Contatos</h2>
+                <address class="contatoRodape">
+                    <p>contato@aquaritech.com.br</p>
+                    <p>(19) 98240-8453</p>
+                </address>
+            </section>
+
+            <section class="secaoRodape">
+                <h2 class="tituloRodape">Formas de Pagamento</h2>
+                <section class="pagamentoRodape">
+                    <section class="itemPagamento">
+                        <i class="bi bi-credit-card"></i>
+                        <p>Cartão</p>
+                    </section>
+                    <section class="itemPagamento">
+                        <i class="bi bi-qr-code"></i>
+                        <p>Pix</p>
+                    </section>
+                    <section class="itemPagamento">
+                        <i class="bi bi-upc"></i>
+                        <p>Boleto</p>
+                    </section>
+                </section>
+            </section>
+
+            <section class="logoRodape">
+                <figure>
+                    <img src="./Images/Aquari Tech.png" alt="Logo da Loja" />
+                </figure>
+            </section>
+
+            <section class="direitos">
+                <small>&copy; 2025 Aquari Tech. Todos os direitos reservados.</small>
+            </section>
+        </footer>
+
+ 
+    </body>
+</html>

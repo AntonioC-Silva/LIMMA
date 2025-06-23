@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Produtos</title>
+        <link rel="stylesheet" href="../style.css" />
+        <link rel="icon" type="image/x-icon" href="../Images/Tech (2).png" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    </head>
+    <body>
+        <!--Menu Lateral-->
+        <aside class="menuLateral">
+            <nav class="navegacaoMenu">
+                <h2 class="tituloMenu">Menu</h2>
+                <ul class="listaMenu">
+                    <li class="itemMenu"><a href="dashboard.html">Dashboard</li></a>
+                    <li class="itemMenu"><a href="cadastroadm.html">Cadastro</li></a>
+                    <li class="itemMenu"><a href="atendimento.html">Atendimento</li></a>
+                    <li class="itemMenu Ativo"><a href="crud.html">Produtos</li></a>
+                </ul>
+            </nav>
+        </aside>
+        <!--Adicionar Produtos-->
+        <main class="painelDashboard">
+    
+            <section class="formularioProdutos">
+                <form class="formProdutos">
+                    <label class="rotuloProduto" ">Nome:</label>
+                    <input class="campoProduto" type="text" placeholder="Nome Produto" />
+
+                    <label class="rotuloProduto">Preço:</label>
+                    <input class="campoProduto" type="number" placeholder="Preço Produto" />
+
+                    <label class="rotuloProduto">Estoque:</label>
+                    <input class="campoProduto" type="number" placeholder="Quantidade em Estoque"  />
+
+                    <button class="botaoAdicionar" type="submit"><i class="bi bi-plus-circle"></i> Adicionar</button>
+                </form>
+            </section>
+            <!--Tabela com nome, preço, estoque e ações (editar e excluir)-->
+            <section class="tabelaProdutos">
+                <table class="tabela">
+                    <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>Preço</th>
+                            <th>Estoque</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Thermaltake Ceres 330 TG ARGB Snow</td>
+                            <td>R$ 859,90</td>
+                            <td>20</td>
+                            <td>
+                                <button class="botaoEditar" aria-label="Editar Produto" title="Editar Produto"><i class="bi bi-pencil"></i></button>
+                                <button class="botaoExcluir" aria-label="Excluir produto" title="Excluir Produto"><i class="bi bi-trash"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>MSI MPG Gungnir 300R AirFlow</td>
+                            <td>R$ 999,90</td>
+                            <td>15</td>
+                            <td>
+                                <button class="botaoEditar" aria-label="Editar Produto" title="Editar Produto"><i class="bi bi-pencil"></i></button>
+                                <button class="botaoExcluir" aria-label="Excluir produto" title="Excluir Produto"><i class="bi bi-trash"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>MSI MAG Forge 320R AirFlow</td>
+                            <td>R$ 849,90</td>
+                            <td>30</td>
+                            <td>
+                                <button class="botaoEditar" aria-label="Editar Produto" title="Editar Produto"><i class="bi bi-pencil"></i></button>
+                                <button class="botaoExcluir" aria-label="Excluir produto" title="Excluir Produto"><i class="bi bi-trash"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Montech King 65 Pro</td>
+                            <td>R$ 649,90</td>
+                            <td>50</td>
+                            <td>
+                                <button class="botaoEditar" aria-label="Editar Produto" title="Editar Produto"><i class="bi bi-pencil"></i></button>
+                                <button class="botaoExcluir" aria-label="Excluir produto" title="Excluir Produto"><i class="bi bi-trash"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Gamdias Atlas M1</td>
+                            <td>R$ 499,90</td>
+                            <td>18</td>
+                            <td>
+                                <button class="botaoEditar" aria-label="Editar Produto" title="Editar Produto"><i class="bi bi-pencil"></i></button>
+                                <button class="botaoExcluir" aria-label="Excluir produto" title="Excluir Produto"><i class="bi bi-trash"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Lian Li Lancool 206 RX</td>
+                            <td>R$ 789,90</td>
+                            <td>26</td>
+                            <td>
+                                <button class="botaoEditar" aria-label="Editar Produto" title="Editar Produto"><i class="bi bi-pencil"></i></button>
+                                <button class="botaoExcluir" aria-label="Excluir produto" title="Excluir Produto"><i class="bi bi-trash"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>DeepCool Cyclops</td>
+                            <td>R$ 749,90</td>
+                            <td>32</td>
+                            <td>
+                                <button class="botaoEditar" aria-label="Editar Produto" title="Editar Produto"><i class="bi bi-pencil"></i></button>
+                                <button class="botaoExcluir" aria-label="Excluir produto" title="Excluir Produto"><i class="bi bi-trash"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Thermaltake CTE C700 Air</td>
+                            <td>R$ 969,90</td>
+                            <td>55</td>
+                            <td>
+                                <button class="botaoEditar" aria-label="Editar Produto" title="Editar Produto"><i class="bi bi-pencil"></i></button>
+                                <button class="botaoExcluir" aria-label="Excluir produto" title="Excluir Produto"><i class="bi bi-trash"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Cooler Master MasterBox MB311L ARGB</td>
+                            <td>R$ 519,90</td>
+                            <td>29</td>
+                            <td>
+                                <button class="botaoEditar" aria-label="Editar Produto" title="Editar Produto"><i class="bi bi-pencil"></i></button>
+                                <button class="botaoExcluir" aria-label="Excluir produto" title="Excluir Produto"><i class="bi bi-trash"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Lian Li Dynamic Razer Edition RGB</td>
+                            <td>R$ 539,90</td>
+                            <td>86</td>
+                            <td>
+                                <button class="botaoEditar" aria-label="Editar Produto" title="Editar Produto"><i class="bi bi-pencil"></i></button>
+                                <button class="botaoExcluir" aria-label="Excluir produto" title="Excluir Produto"><i class="bi bi-trash"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Gamemax Optical G510-DBB</td>
+                            <td>R$ 269,90</td>
+                            <td>10</td>
+                            <td>
+                                <button class="botaoEditar" aria-label="Editar Produto" title="Editar Produto"><i class="bi bi-pencil"></i></button>
+                                <button class="botaoExcluir" aria-label="Excluir produto" title="Excluir Produto"><i class="bi bi-trash"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Cougar Archon 2 RGB</td>
+                            <td>R$ 229,90</td>
+                            <td>12</td>
+                            <td>
+                                <button class="botaoEditar" aria-label="Editar Produto" title="Editar Produto"><i class="bi bi-pencil"></i></button>
+                                <button class="botaoExcluir" aria-label="Excluir produto" title="Excluir Produto"><i class="bi bi-trash"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Redragon Wideload</td>
+                            <td>R$ 989,90</td>
+                            <td>38</td>
+                            <td>
+                                <button class="botaoEditar" aria-label="Editar Produto" title="Editar Produto"><i class="bi bi-pencil"></i></button>
+                                <button class="botaoExcluir" aria-label="Excluir produto" title="Excluir Produto"><i class="bi bi-trash"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Redragon Skyfire</td>
+                            <td>R$ 439,90</td>
+                            <td>23</td>
+                            <td>
+                                <button class="botaoEditar" aria-label="Editar Produto" title="Editar Produto"><i class="bi bi-pencil"></i></button>
+                                <button class="botaoExcluir" aria-label="Excluir produto" title="Excluir Produto"><i class="bi bi-trash"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>SuperFrame Strider</td>
+                            <td>R$ 349,90</td>
+                            <td>18</td>
+                            <td>
+                                <button class="botaoEditar" aria-label="Editar Produto" title="Editar Produto"><i class="bi bi-pencil"></i></button>
+                                <button class="botaoExcluir" aria-label="Excluir produto" title="Excluir Produto"><i class="bi bi-trash"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>SuperFrame Hércules</td>
+                            <td>R$ 1.099,90</td>
+                            <td>30</td>
+                            <td>
+                                <button class="botaoEditar" aria-label="Editar Produto" title="Editar Produto"><i class="bi bi-pencil"></i></button>
+                                <button class="botaoExcluir" aria-label="Excluir produto" title="Excluir Produto"><i class="bi bi-trash"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Hayom GB1713</td>
+                            <td>R$ 396,90</td>
+                            <td>16</td>
+                            <td>
+                                <button class="botaoEditar" aria-label="Editar Produto" title="Editar Produto"><i class="bi bi-pencil"></i></button>
+                                <button class="botaoExcluir" aria-label="Excluir produto" title="Excluir Produto"><i class="bi bi-trash"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Gamdias Aura GC7 ARGB</td>
+                            <td>R$ 270,30</td>
+                            <td>6</td>
+                            <td>
+                                <button class="botaoEditar" aria-label="Editar Produto" title="Editar Produto"><i class="bi bi-pencil"></i></button>
+                                <button class="botaoExcluir" aria-label="Excluir produto" title="Excluir Produto"><i class="bi bi-trash"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Gamdias Aura GC6 ARGB</td>
+                            <td>R$ 329,99</td>
+                            <td>39</td>
+                            <td>
+                                <button class="botaoEditar" aria-label="Editar Produto" title="Editar Produto"><i class="bi bi-pencil"></i></button>
+                                <button class="botaoExcluir" aria-label="Excluir produto" title="Excluir Produto"><i class="bi bi-trash"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Cougar FV270 RGB</td>
+                            <td>R$ 1.259,99</td>
+                            <td>27</td>
+                            <td>
+                                <button class="botaoEditar" aria-label="Editar Produto" title="Editar Produto"><i class="bi bi-pencil"></i></button>
+                                <button class="botaoExcluir" aria-label="Excluir produto" title="Excluir Produto"><i class="bi bi-trash"></i></button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+    </body>
+</html>

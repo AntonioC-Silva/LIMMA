@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Atendimento</title>
+        
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+        <link rel="icon" type="image/x-icon" href="../Images/Tech (2).png" />
+        <link rel="stylesheet" href="../style.css" />
+    </head>
+    <body>
+        <!--Menu Lateral-->
+        <aside class="menuLateral">
+            <nav class="navegacaoMenu">
+                <h2 class="tituloMenu">Menu</h2>
+                <ul class="listaMenu">
+                    <li class="itemMenu"><a href="dashboard.html">Dashboard</li></a>
+                    <li class="itemMenu"><a href="cadastroadm.html">Cadastro</li></a>
+                    <li class="itemMenu Ativo"><a href="atendimento.html">Atendimento</li></a>
+                    <li class="itemMenu"><a href="crud.html">Produtos</li></a>
+                </ul>
+            </nav>
+        </aside>
+    
+        <main class="painelDashboard">
+
+            <!-- Lista de Atendimentos com opções para responder e excluir-->
+            <section class="tabelaProdutos">
+                <table class="tabela">
+                    <thead>
+                        <tr>
+                            <th>Email</th>
+                            <th>Mensagem</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>maria@gmail.com</td>
+                            <td>Vocês possuem loja física ou é apenas online?</td>
+                            <td>
+                                <a class="botaoResponder">Responder</a>
+                                <button class="botaoExcluir" aria-label="Excluir" title="Excluir"><i class="bi bi-trash"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>joao@hotmail.com</td>
+                            <td>Os produtos são originais?</td>
+                            <td>
+                                <a class="botaoResponder">Responder</a>
+                                <button class="botaoExcluir" aria-label="Excluir" title="Excluir"><i class="bi bi-trash"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>luiz.fernandes@gmail.com</td>
+                            <td>Tem algum programa de fidelidade ou benefícios para clientes recorrentes?</td>
+                            <td>
+                                <a class="botaoResponder">Responder</a>
+                                <button class="botaoExcluir" aria-label="Excluir" title="Excluir"><i class="bi bi-trash"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>ricardo.gomes@hotmail.com</td>
+                            <td>Como funciona o processo de troca, caso eu queira um modelo diferente?</td>
+                            <td>
+                                <a class="botaoResponder">Responder</a>
+                                <button class="botaoExcluir" aria-label="Excluir" title="Excluir"><i class="bi bi-trash"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>ana.silva@gmail.com</td>
+                            <td>Os produtos possuem manual de instruções ou guia de uso?</td>
+                            <td>
+                                <a class="botaoResponder">Responder</a>
+                                <button class="botaoExcluir" aria-label="Excluir" title="Excluir"><i class="bi bi-trash"></i></button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+    </body>
+</html>

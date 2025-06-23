@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Cadastro</title>
+        
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+        <link rel="icon" type="image/x-icon" href="../Images/Tech (2).png" />
+        <link rel="stylesheet" href="../style.css" />
+    </head>
+    <body class="paginaLogin">
+        <!--Menu Lateral-->
+    <aside class="menuLateral">
+        <nav class="navegacaoMenu">
+            <h2 class="tituloMenu">Menu</h2>
+            <ul class="listaMenu">
+                <li class="itemMenu"><a href="dashboard.html">Dashboard</li></a>
+                <li class="itemMenu Ativo"><a href="cadastroadm.html">Cadastro</li></a>
+                <li class="itemMenu"><a href="atendimento.html">Atendimento</li></a>
+                <li class="itemMenu"><a href="crud.html">Produtos</li></a>
+            </ul>
+        </nav>
+    </aside>
+ 
+        <!--Card cadastro-->
+        <main class="cadastroAdm">
+            <section class="cartaoCadastro">
+                <h1 class="titulo-cadastro">Cadastro</h1>
+                <!-- Campos do Formulario de cadastro Pessoais-->
+                <form class="formularioCadastro">
+                    <section class="grupoCampos">
+                        <section class="colunaEsquerda">
+                        <label class="labelCampo">Nome</label>
+                        <input type="text" class="campoInput" placeholder="Nome completo"  />
+
+                        <label class="labelCampo">Email</label>
+                        <input type="email" class="campoInput" placeholder="Email" />
+
+                        <label class="labelCampo">Contato</label>
+                        <input type="tel" class="campoInput" placeholder="(xx)xxxxx-xxxx" />
+
+                        <label class="labelCampo">CPF</label>
+                        <input type="text" class="campoInput" placeholder="CPF" />
+
+                        <label class="labelCampo">Senha</label>
+                        <input type="password" class="campoInput" placeholder="Senha" />
+
+                        <label class="labelCampo">Confirmar Senha</label>
+                        <input type="password" class="campoInput" placeholder="Confirme sua senha" />
+                    </section>
+                    <section class="areaBotao">
+                        <a href="login.html" class="botaoCadastra">Cadastrar</a>
+                    </section>
+                </form>
+            </section>
+        </main>
+    </body>
+</html>

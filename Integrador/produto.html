@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Produto</title>
+        
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+        <link rel="icon" type="image/x-icon" href="./Images/Tech (2).png" />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <!-- Botão Voltar-->
+        <header>
+            <article class="voltar">
+                <a href="catalogo.html">
+                    <i class="bi bi-arrow-left"></i>
+                </a>
+            </article>
+        </header>
+            <!--Card com imagem do produto-->
+        <section class="cardGrande">
+            <article class="unidadeProduto">
+                <img src="./Images/300r.png" alt="Gabinete 300R" class="imgProduto">
+            </article>
+            <!-- Card de descrição -->
+            <article class="infoProduto">
+                <h2 class="tituloProduto">Gabinete Gamer MSI MPG Gungnir</h2>
+                <h2 class="tituloProduto">300R AirFlow</h2>
+
+                <section class="estrelasProduto" aria-label="Avaliação com 5 estrelas">
+                    <i class="bi bi-star-fill estrela"></i>
+                    <i class="bi bi-star-fill estrela"></i>
+                    <i class="bi bi-star-fill estrela"></i>
+                    <i class="bi bi-star-fill estrela"></i>
+                    <i class="bi bi-star-fill estrela"></i>
+                </section>
+
+                <h3 class="subtituloProduto">Especificações</h3>
+                <ul class="listaEspecificacoesProduto">
+                    <li><strong>Suporte ao fator de forma da placa-mãe:</strong> E-ATX (até 280 x 305 mm) ATX / MATX / ITX</li>
+                    <li><strong>Suporte de montagem de unidade:</strong> 6 x 2,5" - 2x2,5"/3,5"</li>
+                    <li><strong>Slots de Expansão:</strong> 7</li>
+                    <li><strong>Comprimento máximo da GPU:</strong> 360 mm/14,17 polegadas</li>
+                    <li><strong>Altura máxima do cooler da CPU:</strong> 175 mm / 6,9 polegadas</li>
+                    <li><strong>Suporte para fonte de alimentação:</strong> ATX</li>
+                    <li><strong>Comprimento máximo da fonte de alimentação:</strong> acima de 220 mm</li>
+                </ul>
+
+                <section class="secaoCompra">
+                    <article class="containerPrecoQuantidade">
+                        <strong class="precoProduto">R$260,00</strong>
+                        <section class="quantidadeProduto">
+                            <button class="botaoQuantidade" aria-label="Diminuir Quantidade" title="Diminuir Quantidade">-</button>
+                            <input type="number" min="1" value="1" class="inputQuantidade" />
+                            <button class="botaoQuantidade" aria-label="Aumentar Quantidade" title="Aumentar Quantidade">+</button>
+                        </section>
+                    </article>
+                    <a href="carrinho.html" class="botaoCarrinhoUnidade" aria-label="Adicionar ao carrinho" title="Adicionar ao carrinho">
+                        Adicionar ao Carrinho <i class="bi bi-cart3"></i>
+                    </a>
+
+                </section>
+            </article>
+        </section>
+        <!-- Footer -->
+        <hr class="linhaRodape" />
+
+        <footer class="rodape">
+            <section class="secaoRodape">
+                <h2 class="tituloRodape">Links Úteis</h2>
+                <nav class="navegacaoRodape">
+                    <ul>
+                        <li class="itemRodape"><a href="catalogo.html">Catálogo</a></li>
+                        <li class="itemRodape"><a href="#">Contato</a></li>
+                        <li class="itemRodape"><a href="#">Sobre Nós</a></li>
+                        <li class="itemRodape"><a href="index.html">Home</a></li>
+                    </ul>
+                </nav>
+            </section>
+
+            <section class="secaoRodape">
+                <h2 class="tituloRodape">Contatos</h2>
+                <address class="contatoRodape">
+                    <p>contato@aquaritech.com.br</p>
+                    <p>(19) 98240-8453</p>
+                </address>
+            </section>
+
+            <section class="secaoRodape">
+                <h2 class="tituloRodape">Formas de Pagamento</h2>
+                <section class="pagamentoRodape">
+                    <section class="itemPagamento">
+                        <i class="bi bi-credit-card"></i>
+                        <p>Cartão</p>
+                    </section>
+                    <section class="itemPagamento">
+                        <i class="bi bi-qr-code"></i>
+                        <p>Pix</p>
+                    </section>
+                    <section class="itemPagamento">
+                        <i class="bi bi-upc"></i>
+                        <p>Boleto</p>
+                    </section>
+                </section>
+            </section>
+
+            <section class="logoRodape">
+                <figure>
+                    <img src="./Images/Aquari Tech.png" alt="Logo da Loja" />
+                </figure>
+            </section>
+
+            <section class="direitos">
+                <small>&copy; 2025 Aquari Tech. Todos os direitos reservados.</small>
+            </section>
+        </footer>
+
+    </body>
+</html>

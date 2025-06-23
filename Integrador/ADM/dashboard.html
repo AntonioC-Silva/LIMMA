@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Dashboard</title>
+        <link rel="stylesheet" href="../style.css" />
+        <link rel="icon" type="image/x-icon" href="../Images/Tech (2).png" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    </head>
+    <body>
+        <!--Menu Lateral-->
+        <aside class="menuLateral">
+            <nav class="navegacaoMenu">
+                <h2 class="tituloMenu">Menu</h2>
+                <ul class="listaMenu">
+                    <li class="itemMenu Ativo"><a href="dashboard.html">Dashboard</li></a>
+                    <li class="itemMenu"><a href="cadastroadm.html">Cadastro</li></a>
+                    <li class="itemMenu"><a href="atendimento.html">Atendimento</li></a>
+                    <li class="itemMenu"><a href="crud.html">Produtos</li></a>
+                </ul>
+            </nav>
+        </aside>
+        <!--Cards Informações Principais-->
+        <main class="painelDashboard">
+            <section class="cardsResumo">
+                <article class="cardInfo">
+                    <h3 class="tituloCard">Total Vendido</h3>
+                    <p class="valorCard">R$ 15.430,00</p>
+                </article>
+                <article class="cardInfo">
+                    <h3 class="tituloCard">Produtos Ativos</h3>
+                    <p class="valorCard">20</p>
+                </article>
+                <article class="cardInfo">
+                    <h3 class="tituloCard">Clientes</h3>
+                    <p class="valorCard">321</p>
+                </article>
+            </section>
+            <!--Card para os graficos-->
+            <section class="areaGraficos">
+                <h2 class="tituloGrafico">Gráficos</h2>
+                <section class="espacoGrafico">
+                    <img src="../Images/barras.png" alt=" Gráfico de barras informando quantidade de pagamentos em boleto, cartão e pix">
+                    <img src="../Images/quadrado.png" alt="Gráfico de mapa de árvore informando porcentagem de vendas por mês">
+                </section>
+            </section>
+        </main>
+    </body>
+</html>
